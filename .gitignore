@@ -1,0 +1,9 @@
+*.pyc
+__pycache__/
+.venv/
+*.pdf
+.DS_Store
+*.log
+research_*/
+.claude/
+uv.lock
