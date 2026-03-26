@@ -35,6 +35,7 @@ Must have completed /harass-lit (requires analysis/ folder)
 4. Generate 5 concrete ideas addressing gaps
 5. Check novelty with novelty-check skill
 6. Write ideas/candidates.md
+7. **ASK USER**: Present all 5 ideas. Ask which ones to explore further. Allow editing ideas/candidates.md in D:\Claude folder.
 
 ### Step 2: Report
-Tell user: "Ideas generated. Run /harass-experiment to validate with pilots."
+Tell user: "Ideas generated in D:\Claude\{project_folder}/ideas/. **Review and edit candidates.md if needed.** Run /harass-experiment when ready."

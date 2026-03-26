@@ -106,6 +106,7 @@ Use Agent tool with worker agent:
 4. Generate 5 concrete ideas addressing gaps
 5. Check novelty with novelty-check skill
 6. Write ideas/candidates.md
+7. **ASK USER**: Present all 5 ideas and ask which ones to explore further (allow editing candidates.md in D:\Claude folder)
 
 ### Step 6: Spawn Worker for Pilots
 
@@ -121,17 +122,18 @@ Use Agent tool with worker agent:
 2. **Assess all ideas** for feasibility and impact:
    - Feasibility: implementation complexity, data availability, compute requirements
    - Impact: novelty, potential contribution, baseline comparison strength
-3. **Select best idea** balancing feasibility and meaningfulness
+3. **ASK USER**: Present assessment and ask which idea to implement (allow editing in D:\Claude folder)
 4. Use experiment-plan skill to create detailed roadmap
-5. Implement experiment code (Python/PyTorch):
+5. **ASK USER**: Review experiment plan - which baseline to use? which dataset? (allow editing EXPERIMENT_PLAN.md)
+6. Implement experiment code (Python/PyTorch):
    - Training scripts with argparse
    - Evaluation scripts with metrics
    - Data loaders
    - Fixed random seeds
-6. Sanity check: Run smallest version locally to catch bugs
-7. Deploy to GPU servers using run-experiment skill
-8. Monitor with monitor-experiment skill
-9. Write experiments/pilot_results.json with selection rationale
+7. Sanity check: Run smallest version locally to catch bugs
+8. Deploy to GPU servers using run-experiment skill
+9. Monitor with monitor-experiment skill
+10. Write experiments/pilot_results.json with selection rationale
 
 ### Step 7: Final Plan (You Do This)
 

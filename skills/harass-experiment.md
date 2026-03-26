@@ -35,17 +35,18 @@ Must have ideas/candidates.md from /harass-ideas
 2. **Assess all ideas** for feasibility and impact:
    - Feasibility: implementation complexity, data availability, compute requirements
    - Impact: novelty, potential contribution, baseline comparison strength
-3. **Select best idea** balancing feasibility and meaningfulness
+3. **ASK USER**: Present assessment. Which idea should we implement? Allow editing in D:\Claude folder.
 
 ### Step 2: Implement Pilot
-4. Implement minimal experiment code (Python)
-5. Sanity check: Run smallest version locally to catch bugs
-6. Write experiments/pilot_results.json with selection rationale
+4. **ASK USER**: Which baseline to compare against? Which dataset to use? Allow editing EXPERIMENT_PLAN.md.
+5. Implement minimal experiment code (Python)
+6. Sanity check: Run smallest version locally to catch bugs
+7. Write experiments/pilot_results.json with selection rationale
 
 ### Step 3: Create Final Plan
-7. Use experiment-plan skill for detailed roadmap
-8. Write ideas/final_plan.md with:
+8. Use experiment-plan skill for detailed roadmap
+9. Write ideas/final_plan.md with:
    - Selected idea rationale
    - **Compare against newest baseline** - Ensure proposed approach exceeds current SOTA
    - Experiment plan reference
-9. Report to user
+10. Report to user: "Final plan in D:\Claude\{project_folder}/ideas/. Review and edit before full implementation."

@@ -54,4 +54,4 @@ Use Agent tool with worker agent:
 - Agent file: D:\Claude\research-workflow\agents\worker.md
 
 ### Step 5: Report
-Tell user: "Literature review complete. Run /harass-ideas to generate research ideas."
+Tell user: "Literature review complete. Files in D:\Claude\{project_folder}. **Please review analysis/evolution.md and analysis/missing_papers.md. You can edit any files before proceeding.** Run /harass-ideas when ready."
